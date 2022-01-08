@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    tools:context="vr.ar.cmr.cmrit.augmented.virtual.reality.campus.cmritexplorer.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cmrit"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="end"
+            android:id="@+id/imageView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#aaFFFFFF"
+            android:layout_gravity="end"
+            android:layout_marginBottom="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="12dp"
+            android:text="CMR Institute\nof Technology"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:layout_gravity="start"
+        android:layout_margin="30dp"
+        android:textSize="30dp"
+        android:text="CMRIT\nExplorer"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/website"
+        android:text=" www.cmrit.ac.in "
+        android:textSize="20dp"
+        android:autoLink="web"
+        android:lineSpacingExtra="5dp"
+        android:textColorLink="#FFF"
+        android:textAlignment="center"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="10dp"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#FFF"-->
+        <!--android:paddingLeft="8dp"-->
+        <!--android:paddingRight="8dp"-->
+        <!--android:paddingTop="4dp"-->
+        <!--android:paddingBottom="4dp"-->
+        <!--android:onClick="about"-->
+        <!--android:layout_gravity="end|bottom"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:textSize="20dp"-->
+        <!--android:text="About"-->
+        <!--android:id="@+id/textView" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:layout_gravity="start"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="110dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text=" a place where AR\n meets VR to view CMR"
+        android:id="@+id/textView2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="70dp"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:onClick="ar"
+            android:background="@drawable/background_button"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ar" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:text="Augmented Reality"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@drawable/background_button"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:onClick="vr"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/vr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:text="Virtual Tour"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
